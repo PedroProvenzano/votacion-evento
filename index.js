@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
 });
 
 // Listener, lo que ejecuta la api (backend)
-http.listen(3000, () => {
-  console.log(`Conectado en puerto 3000`);
+http.listen(process.env.PORT, () => {
+  console.log(`Conectado en puerto ${process.env.PORT}`);
 });
